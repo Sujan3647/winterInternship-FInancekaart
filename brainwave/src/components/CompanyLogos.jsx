@@ -21,7 +21,26 @@ const CompanyLogos = ({ className }) => {
     { name: "Burger King", logo: "buiggerking-removebg-preview.png" },
     { name: "Subway", logo: "subway.png" },
     { name: "Starbucks", logo: "Starbucks_Corporation_Logo_2011.svg.png" },
-    { name: "Download", logo: "download.png" }
+    { name: "Amazon Pay", logo: "Amazon_Pay_logo.svg.png" },
+    { name: "Prime Video", logo: "Amazon_Prime_Video_logo_(2024).svg.png" },
+    { name: "BookMyShow", logo: "bookmyshow.jpg" },
+    { name: "Canva", logo: "Canva.jpg" },
+    { name: "Coursera", logo: "Coursera-Logo_600x600.svg.png" },
+    { name: "CRED", logo: "CRED.png" },
+    { name: "Goibibo", logo: "Goibibo.png" },
+    { name: "Google Pay", logo: "google-pay-mark.png" },
+    { name: "MakeMyTrip", logo: "ake my.png" },
+    { name: "Netflix", logo: "Netflix.jpg" },
+    { name: "Ola", logo: "ola.png" },
+    { name: "OYO", logo: "OYO.png" },
+    { name: "Paytm", logo: "PAYtm.png" },
+    { name: "PhonePe", logo: "phonepay logo.png" },
+    { name: "RedBus", logo: "RedBus.png" },
+    { name: "Spotify", logo: "Spotify.png" },
+    { name: "Udemy", logo: "Udemy.png" },
+    { name: "Download", logo: "download.png" },
+    { name: "Disney+ Hotstar", logo: "Disney+ Hotstar.webp" },
+    { name: "Uber", logo: "uber.svg" }
   ];
 
   return (
