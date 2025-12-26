@@ -7,9 +7,9 @@ import { check2, grid, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
-  <Section className="overflow-hidden" id="terms">
+  <Section className="overflow-hidden" id="process">
     <div className="container md:pb-10">
-      <Heading tag="Ready to get started" title="What we’re working on" />
+      <Heading tag="Simple & Easy" title="How It Works" />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
         {roadmap.map((item) => {
@@ -48,15 +48,6 @@ const Roadmap = () => (
                     </div>
                   </div>
 
-                  <div className="mb-10 -my-10 -mx-15">
-                    <img
-                      className="w-full"
-                      src={item.imageUrl}
-                      width={628}
-                      height={426}
-                      alt={item.title}
-                    />
-                  </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
                   <p className="body-2 text-n-4">{item.text}</p>
                 </div>
@@ -66,10 +57,6 @@ const Roadmap = () => (
         })}
 
         <Gradient />
-      </div>
-
-      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">Our roadmap</Button>
       </div>
     </div>
   </Section>

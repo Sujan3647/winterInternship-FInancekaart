@@ -16,8 +16,8 @@ const Services = () => {
     <Section id="process">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Smart Cashback Solutions"
+          text="Experience seamless savings with our intelligent rewards platform"
         />
 
         <div className="relative">
