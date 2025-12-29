@@ -2,10 +2,8 @@ import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
-import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 
@@ -23,7 +21,7 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] animate-fade-in">
           <h1 className="h1 mb-6 animate-slide-up">
-           Unlock Evey Deal &nbsp;With {` `}
+           Maximize Your Savings &nbsp;With {` `}
             <span className="inline-block relative animate-bounce-slow">
               CouponPe{" "}
               <img
@@ -36,11 +34,10 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 animate-slide-up animation-delay-200">
-            Buy, sell, and discover genuine coupons.
-More discounts. More rewards. More value.
+            Your trusted platform for authentic coupon trading and discovery. Experience enhanced discounts, premium rewards, and exceptional value on every transaction.
           </p>
           <Button href="https://play.google.com/store/apps/details?id=com.founder_code.coupon_pe" white>
-            Get started
+            Get Started
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 animate-fade-in animation-delay-400">

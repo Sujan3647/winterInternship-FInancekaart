@@ -4,9 +4,7 @@ import Collaboration from "./components/Collaboration";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
-import Services from "./components/Services";
 import Section from "./components/Section";
 import Heading from "./components/Heading";
 import { check } from "./assets";
@@ -196,160 +194,298 @@ const App = () => {
             <Heading
               className="md:max-w-md lg:max-w-2xl"
               title="Terms & Conditions"
-              text="Understanding your agreement with CouponPe"
+              text="Essential guidelines for using our platform"
             />
 
-            <div className="relative mt-10">
-              {/* Highlight Banner */}
-              <div className="relative z-1 mb-10 overflow-hidden rounded-3xl border border-n-1/10">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-orange-500/10"></div>
-                <div className="relative p-8 lg:p-10 flex items-center gap-6">
-                  <div className="hidden lg:flex w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 items-center justify-center flex-shrink-0">
-                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="h5 text-n-1 mb-2">Your Agreement with Us</h4>
-                    <p className="body-2 text-n-3">By using CouponPe, you agree to these terms. Violations may result in account suspension and loss of earnings.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Terms List */}
-              <div className="relative z-1 space-y-5">
+            <div className="relative mt-10 max-w-4xl mx-auto">
+              {/* Compact Card Layout */}
+              <div className="relative z-1 grid md:grid-cols-2 gap-4">
                 {/* Term 1 */}
-                <div className="group relative overflow-hidden rounded-2xl border border-n-1/10 bg-n-8 hover:border-purple-500/30 transition-all">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-purple-500 to-pink-500"></div>
-                  <div className="p-6 lg:p-8 pl-8 lg:pl-10">
-                    <div className="flex items-start justify-between gap-4 mb-4">
-                      <h5 className="h6 text-n-1">One Account Per User</h5>
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Mandatory</span>
+                <div className="p-5 bg-n-7/50 backdrop-blur border border-n-1/10 rounded-2xl hover:bg-n-7 transition-all">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-n-6 flex items-center justify-center flex-shrink-0">
+                      <span className="text-n-1 font-bold text-sm">01</span>
                     </div>
-                    <p className="body-2 text-n-3 leading-relaxed">
-                      Each person is allowed only one account. Creating multiple accounts will lead to immediate suspension of all your accounts without warning.
-                    </p>
+                    <div>
+                      <h6 className="text-n-1 font-semibold mb-1">One Account Per User</h6>
+                      <p className="body-2 text-n-4 text-sm">Each user is allowed only one account. Multiple accounts will be suspended.</p>
+                    </div>
                   </div>
                 </div>
 
                 {/* Term 2 */}
-                <div className="group relative overflow-hidden rounded-2xl border border-n-1/10 bg-n-8 hover:border-green-500/30 transition-all">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-green-500 to-emerald-500"></div>
-                  <div className="p-6 lg:p-8 pl-8 lg:pl-10">
-                    <div className="flex items-start justify-between gap-4 mb-4">
-                      <h5 className="h6 text-n-1">How to Earn Cashback</h5>
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-green-500/10 text-green-400 border border-green-500/20">Important</span>
+                <div className="p-5 bg-n-7/50 backdrop-blur border border-n-1/10 rounded-2xl hover:bg-n-7 transition-all">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-n-6 flex items-center justify-center flex-shrink-0">
+                      <span className="text-n-1 font-bold text-sm">02</span>
                     </div>
-                    <div className="space-y-3">
-                      <p className="body-2 text-n-3 leading-relaxed flex items-start gap-3">
-                        <span className="text-green-500 mt-1">•</span>
-                        <span>You must be logged into www.couponpe.in and click our retailer links before shopping</span>
-                      </p>
-                      <p className="body-2 text-n-3 leading-relaxed flex items-start gap-3">
-                        <span className="text-green-500 mt-1">•</span>
-                        <span>Transactions require retailer approval - processing times vary</span>
-                      </p>
-                      <p className="body-2 text-n-3 leading-relaxed flex items-start gap-3">
-                        <span className="text-green-500 mt-1">•</span>
-                        <span>Refunded or canceled orders don't earn cashback</span>
-                      </p>
+                    <div>
+                      <h6 className="text-n-1 font-semibold mb-1">Cashback Requirements</h6>
+                      <p className="body-2 text-n-4 text-sm">Use retailer links while logged in. Subject to merchant approval.</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Term 3 */}
-                <div className="group relative overflow-hidden rounded-2xl border border-n-1/10 bg-n-8 hover:border-red-500/30 transition-all">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-red-500 to-orange-500"></div>
-                  <div className="p-6 lg:p-8 pl-8 lg:pl-10">
-                    <div className="flex items-start justify-between gap-4 mb-4">
-                      <h5 className="h6 text-n-1">Zero Tolerance for Fraud</h5>
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-red-500/10 text-red-400 border border-red-500/20">Critical</span>
+                <div className="p-5 bg-n-7/50 backdrop-blur border border-n-1/10 rounded-2xl hover:bg-n-7 transition-all">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-n-6 flex items-center justify-center flex-shrink-0">
+                      <span className="text-n-1 font-bold text-sm">03</span>
                     </div>
-                    <p className="body-2 text-n-3 leading-relaxed">
-                      Any fraudulent activity including fake transactions, system manipulation, or unauthorized claims results in permanent account ban and potential legal action. All pending earnings will be forfeited.
-                    </p>
+                    <div>
+                      <h6 className="text-n-1 font-semibold mb-1">No Fraud Tolerance</h6>
+                      <p className="body-2 text-n-4 text-sm">Fraudulent activity results in permanent ban and legal action.</p>
+                    </div>
                   </div>
                 </div>
 
                 {/* Term 4 */}
-                <div className="group relative overflow-hidden rounded-2xl border border-n-1/10 bg-n-8 hover:border-amber-500/30 transition-all">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-amber-500 to-yellow-500"></div>
-                  <div className="p-6 lg:p-8 pl-8 lg:pl-10">
-                    <div className="flex items-start justify-between gap-4 mb-4">
-                      <h5 className="h6 text-n-1">Account Inactivity</h5>
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">Notice</span>
+                <div className="p-5 bg-n-7/50 backdrop-blur border border-n-1/10 rounded-2xl hover:bg-n-7 transition-all">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-n-6 flex items-center justify-center flex-shrink-0">
+                      <span className="text-n-1 font-bold text-sm">04</span>
                     </div>
-                    <p className="body-2 text-n-3 leading-relaxed">
-                      Accounts inactive for 60+ days are automatically deleted. All pending earnings in deleted accounts are permanently forfeited.
-                    </p>
+                    <div>
+                      <h6 className="text-n-1 font-semibold mb-1">Account Inactivity</h6>
+                      <p className="body-2 text-n-4 text-sm">Inactive accounts (60+ days) are deleted with all pending rewards.</p>
+                    </div>
                   </div>
                 </div>
 
                 {/* Term 5 */}
-                <div className="group relative overflow-hidden rounded-2xl border border-n-1/10 bg-n-8 hover:border-blue-500/30 transition-all">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-500 to-cyan-500"></div>
-                  <div className="p-6 lg:p-8 pl-8 lg:pl-10">
-                    <div className="flex items-start justify-between gap-4 mb-4">
-                      <h5 className="h6 text-n-1">Email Communications</h5>
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Info</span>
+                <div className="p-5 bg-n-7/50 backdrop-blur border border-n-1/10 rounded-2xl hover:bg-n-7 transition-all">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-n-6 flex items-center justify-center flex-shrink-0">
+                      <span className="text-n-1 font-bold text-sm">05</span>
                     </div>
-                    <p className="body-2 text-n-3 leading-relaxed">
-                      We'll send you newsletters with updates, offers, and promotions. You can unsubscribe anytime through account settings or email links.
-                    </p>
+                    <div>
+                      <h6 className="text-n-1 font-semibold mb-1">Email Communications</h6>
+                      <p className="body-2 text-n-4 text-sm">We send updates and offers. Unsubscribe anytime via settings.</p>
+                    </div>
                   </div>
                 </div>
 
                 {/* Term 6 */}
-                <div className="group relative overflow-hidden rounded-2xl border border-n-1/10 bg-n-8 hover:border-indigo-500/30 transition-all">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-indigo-500 to-violet-500"></div>
-                  <div className="p-6 lg:p-8 pl-8 lg:pl-10">
-                    <div className="flex items-start justify-between gap-4 mb-4">
-                      <h5 className="h6 text-n-1">Terms May Change</h5>
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Updates</span>
+                <div className="p-5 bg-n-7/50 backdrop-blur border border-n-1/10 rounded-2xl hover:bg-n-7 transition-all">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-n-6 flex items-center justify-center flex-shrink-0">
+                      <span className="text-n-1 font-bold text-sm">06</span>
                     </div>
-                    <p className="body-2 text-n-3 leading-relaxed">
-                      We may update these terms anytime. You'll be notified of major changes via email. Continued use means you accept the updates.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Term 7 */}
-                <div className="group relative overflow-hidden rounded-2xl border border-n-1/10 bg-n-8 hover:border-pink-500/30 transition-all">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-pink-500 to-rose-500"></div>
-                  <div className="p-6 lg:p-8 pl-8 lg:pl-10">
-                    <div className="flex items-start justify-between gap-4 mb-4">
-                      <h5 className="h6 text-n-1">Termination Rights</h5>
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">Policy</span>
+                    <div>
+                      <h6 className="text-n-1 font-semibold mb-1">Terms Updates</h6>
+                      <p className="body-2 text-n-4 text-sm">We may update terms anytime. Continued use means acceptance.</p>
                     </div>
-                    <p className="body-2 text-n-3 leading-relaxed">
-                      We reserve the right to suspend or terminate any account that violates these terms, without prior notice or refund of pending earnings.
-                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* Footer */}
-              <div className="mt-10 text-center">
-                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-n-7 border border-n-1/10">
-                  <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                  <span className="caption text-n-4">Last updated: December 2025</span>
+              {/* Footer Notice */}
+              <div className="relative z-1 mt-8 p-6 bg-gradient-to-r from-n-7 to-n-8 border border-n-1/10 rounded-2xl text-center">
+                <p className="body-2 text-n-3">
+                  By using CouponPe, you agree to these terms. We reserve the right to suspend or terminate accounts for violations.
+                </p>
+                <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-n-8/50 border border-n-1/10">
+                  <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                  <span className="text-xs text-n-4">Last updated: December 2025</span>
                 </div>
               </div>
             </div>
           </div>
         </Section>
-        <Services />
-        <Pricing />
-        <Section id="refund" className="py-10">
+
+        {/* Refund Section */}
+        <Section id="refund" className="overflow-hidden">
           <div className="container">
-            <h2 className="h2 mb-4">Refund Policy</h2>
-            <p className="body-2 text-n-4">Refund policy content goes here.</p>
+            <Heading
+              className="md:max-w-md lg:max-w-2xl"
+              title="Refund & Exchange Policy"
+              text="Flexible returns and transparent refund process"
+            />
+
+            <div className="relative mt-10 max-w-4xl mx-auto">
+              <div className="relative z-1 space-y-5">
+                {/* Returns & Exchanges */}
+                <div className="p-6 lg:p-8 bg-n-7 border border-n-1/10 rounded-3xl">
+                  <div className="mb-6">
+                    <h5 className="h5 text-n-1 mb-3">Returns & Exchanges</h5>
+                    <p className="body-2 text-n-3 mb-6">
+                      We offer a very flexible return and exchange policy. If you are not satisfied with our offline services order, you can easily return or exchange the services using our email.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="p-4 bg-n-8/50 border border-n-1/10 rounded-xl">
+                      <p className="font-semibold text-n-1 mb-2 flex items-center gap-2">
+                        <span>Email Contact</span>
+                      </p>
+                      <p className="body-2 text-n-3">info@couponpe.in</p>
+                    </div>
+
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <div className="p-4 bg-n-8/50 border border-n-1/10 rounded-xl">
+                        <p className="font-semibold text-n-1 mb-2 flex items-center gap-2">
+                          <span className="text-green-500">✓</span> Eligible Requests
+                        </p>
+                        <p className="body-2 text-n-4 text-sm">Refund requests must be made within 5 days of the order</p>
+                      </div>
+
+                      <div className="p-4 bg-n-8/50 border border-n-1/10 rounded-xl">
+                        <p className="font-semibold text-n-1 mb-2 flex items-center gap-2">
+                          <span className="text-red-500">✗</span> Service Access
+                        </p>
+                        <p className="body-2 text-n-4 text-sm">Once payment is refunded, access to those services will be revoked</p>
+                      </div>
+                    </div>
+
+                    <div className="p-4 bg-n-8/50 border border-n-1/10 rounded-xl">
+                      <p className="font-semibold text-n-1 mb-2">Customer Support</p>
+                      <p className="body-2 text-n-3">For any queries, contact us via WhatsApp: <span className="text-n-1">+91-8881098282</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Exchanges */}
+                <div className="p-6 lg:p-8 bg-n-7 border border-n-1/10 rounded-3xl">
+                  <h5 className="h5 text-n-1 mb-3">Exchange Process</h5>
+                  <p className="body-2 text-n-3">
+                    The fastest way to get what you want is to return the order you have, and once the return is accepted, make a separate purchase for the new order.
+                  </p>
+                </div>
+
+                {/* Refund Process */}
+                <div className="p-6 lg:p-8 bg-n-7 border border-n-1/10 rounded-3xl">
+                  <h5 className="h5 text-n-1 mb-4">Refund Process</h5>
+                  <p className="body-2 text-n-3 mb-6">
+                    Once we have received and inspected your return, we will notify you and let you know if the refund was approved.
+                  </p>
+
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="p-5 bg-n-8/50 border border-n-1/10 rounded-xl">
+                      <div className="flex items-start gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+                          <span className="text-green-500 font-bold">✓</span>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-n-1 mb-2">Approved Refunds</p>
+                          <p className="body-2 text-n-4 text-sm">Upon approval, you will be automatically refunded to your original payment method</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-5 bg-n-8/50 border border-n-1/10 rounded-xl">
+                      <div className="flex items-start gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+                          <span className="text-amber-500 font-bold">⏳</span>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-n-1 mb-2">Processing Time</p>
+                          <p className="body-2 text-n-4 text-sm">It may take some time for your bank or credit card company to process and post the refund</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </Section>
-        <Section id="contact" className="py-10">
+
+        {/* Contact Section */}
+        <Section id="contact" className="overflow-hidden">
           <div className="container">
-            <h2 className="h2 mb-4">Contact Us</h2>
-            <p className="body-2 text-n-4">Contact information goes here.</p>
+            <Heading
+              className="md:max-w-md lg:max-w-2xl"
+              title="Contact Us"
+              text="Send us a message and we'll get back to you soon"
+            />
+
+            <div className="relative mt-10 max-w-3xl mx-auto">
+              <div className="relative z-1 p-8 lg:p-10 bg-n-7 border border-n-1/10 rounded-3xl">
+                <form className="space-y-6">
+                  {/* Name Field */}
+                  <div>
+                    <label htmlFor="name" className="block text-n-1 font-semibold mb-2">
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your full name"
+                      className="w-full px-4 py-3 bg-n-8 border border-n-1/10 rounded-xl text-n-1 placeholder:text-n-4 focus:border-n-1/20 focus:outline-none transition-colors"
+                      required
+                    />
+                  </div>
+
+                  {/* Email Field */}
+                  <div>
+                    <label htmlFor="email" className="block text-n-1 font-semibold mb-2">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="your.email@example.com"
+                      className="w-full px-4 py-3 bg-n-8 border border-n-1/10 rounded-xl text-n-1 placeholder:text-n-4 focus:border-n-1/20 focus:outline-none transition-colors"
+                      required
+                    />
+                  </div>
+
+                  {/* Subject Field */}
+                  <div>
+                    <label htmlFor="subject" className="block text-n-1 font-semibold mb-2">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="What is this regarding?"
+                      className="w-full px-4 py-3 bg-n-8 border border-n-1/10 rounded-xl text-n-1 placeholder:text-n-4 focus:border-n-1/20 focus:outline-none transition-colors"
+                      required
+                    />
+                  </div>
+
+                  {/* Message Field */}
+                  <div>
+                    <label htmlFor="message" className="block text-n-1 font-semibold mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="6"
+                      placeholder="Tell us how we can help you..."
+                      className="w-full px-4 py-3 bg-n-8 border border-n-1/10 rounded-xl text-n-1 placeholder:text-n-4 focus:border-n-1/20 focus:outline-none transition-colors resize-none"
+                      required
+                    ></textarea>
+                  </div>
+
+                  {/* Submit Button */}
+                  <div>
+                    <button
+                      type="submit"
+                      className="w-full px-6 py-4 bg-n-1 text-n-8 font-semibold rounded-xl hover:bg-n-2 transition-colors"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+
+                {/* Contact Info Footer */}
+                <div className="mt-8 pt-8 border-t border-n-1/10">
+                  <p className="text-center body-2 text-n-4 mb-4">
+                    Or reach us directly at
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-6 text-sm">
+                    <a href="mailto:info@couponpe.in" className="text-n-3 hover:text-n-1 transition-colors">
+                      info@couponpe.in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </Section>
         <Footer />
